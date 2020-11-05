@@ -26,10 +26,18 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    control.cpp \
+    food.cpp \
+    snake.cpp \
+    snakewidget.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    control.h \
+    food.h \
+    snake.h \
+    snakewidget.h
 
 FORMS += \
         mainwindow.ui
@@ -38,3 +46,6 @@ FORMS += \
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    res.qrc
