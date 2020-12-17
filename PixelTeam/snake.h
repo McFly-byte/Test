@@ -11,14 +11,13 @@ public:
     Snake *next;        //指针连接
 
     Snake(int x,int y);
-    void Up();
-    void Down();
-    void Left();
-    void Right();
+    void Up();          //向上
+    void Down();        //向下
+    void Left();        //向左
+    void Right();       //向右
     bool EatItself();   //判断是否咬到自己
     void Addsnake();    //尾部添加节点
-    bool judge(int x,int y);
-    void Update();
+    void Update();      //更新蛇的位置信息
 };
 
 #endif // SNAKE_H
